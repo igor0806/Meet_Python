@@ -1,4 +1,4 @@
-test
+
 
 values = input('Input some numbers: ')
    list = values.split(' ')
