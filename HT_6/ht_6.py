@@ -1,7 +1,7 @@
 value_a = int(input('Enter a value a: '))
 value_b = int(input('Enter a value b: '))
-search = input('Enter a number to check the value of numbers')
-search_list = search.split(',')
+check_number = input('Enter a number to check the value of numbers')
+search_list = check_number.split(',')
 g = []
 
 for i in search_list:
