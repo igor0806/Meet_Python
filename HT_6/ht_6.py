@@ -1,13 +1,16 @@
-give = int(input('Enter a value'))
-check = input('Enter a number to check the value of numbers')
-g = 0
-search = check.split()
-for i in range(0,len(search)):
-    if give == int(search[i]):
-        g = 1
-        break;
+value_a = int(input("Enter a value a: "))
+value_b = int(input("Enter a value b: "))
+search = input("Enter a number to check if its in the value of numbers")
+search_list = search.split(',')
+g = []
 
-if g == 1:
-    print('True')
+for i in search_list:
+    g.append(int(i))
+if value_a in g:
+    print("True")
 else:
-    print('False')
+    print("False")
+if value_b in g:
+    print("True")
+else:
+    print("False")
