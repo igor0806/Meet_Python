@@ -15,11 +15,8 @@ def some_func(something):
 
     if len(something) > 50:
         print('SMILE')
-        for n in range(10):
-            emoticons = ''
-            for count in range(n):
-                emoticons += '\U0001f600'
-                print(emoticons)
+        for n in range(1, 10):
+            print('\U0001f600' * n)
 
 
 print(some_func(input()))
