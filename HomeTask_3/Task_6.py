@@ -14,6 +14,12 @@ def some_func(something):
         print(sum([int(x) for x in something if x.isnumeric()]))
 
     if len(something) > 50:
-        print(sorted(something))
+        print('SMILE')
+        for n in range(10):
+            emoticons = ''
+            for count in range(n):
+                emoticons += '\U0001f600'
+                print(emoticons)
+
 
 print(some_func(input()))
