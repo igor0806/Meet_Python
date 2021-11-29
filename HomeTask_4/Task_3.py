@@ -2,8 +2,8 @@
 # и яка вертатиме True, якщо це число просте, и False - якщо ні.
 
 def is_prime(i):
-    while i in (0, 1, 2, 3):
-        print('True')
+    # while i in (0, 1, 2, 3):
+    #     print('True')
     if i % 2 != 0 or i % 3 != 0:
         print('True')
     else:

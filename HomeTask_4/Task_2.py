@@ -5,11 +5,11 @@
 # принтануть і вернуть суму, яка буде на рахунку.
 
 
-def bank(money, years, percent):
+def bank(money, years, percent=10):
     for year in range(years):
         money = money*(percent/100)+money
     return "%.2f" % money
 money=int(input('Введите сумму вклада: '))
 years=int(input('Введите на сколько лет: '))
-percent=int(input('Введите процент: '))
-print(bank(money, years, percent))
+# percent=int(input('Введите процент: '))
+print(bank(money, years, percent=10))
