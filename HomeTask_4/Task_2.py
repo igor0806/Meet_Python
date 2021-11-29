@@ -11,5 +11,4 @@ def bank(money, years, percent=10):
     return "%.2f" % money
 money=int(input('Введите сумму вклада: '))
 years=int(input('Введите на сколько лет: '))
-# percent=int(input('Введите процент: '))
-print(bank(money, years, percent=10))
+print(bank(money, years))
