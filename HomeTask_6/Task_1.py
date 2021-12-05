@@ -11,6 +11,6 @@ while True:
         print(f'{traffic_light_a[1]:<10} {traffic_light_p[1]}')
         sleep(1)
 
-traffic_light_a = traffic_light_a[::-1]
-traffic_light_p = traffic_light_p[::-1]
+    traffic_light_a = traffic_light_a[::-1]
+    traffic_light_p = traffic_light_p[::-1]
 
