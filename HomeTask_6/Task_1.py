@@ -13,4 +13,3 @@ while True:
 
     traffic_light_a = traffic_light_a[::-1]
     traffic_light_p = traffic_light_p[::-1]
-
