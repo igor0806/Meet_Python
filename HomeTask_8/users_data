@@ -1,0 +1,4 @@
+[{"name": "Yoda", "password":"9999", "type": "incasator"},
+{"name": "Rimma", "password":"1112",  "type": "user"},
+{"name": "Igor", "password":"1111", "type": "user"},
+{"name": "Alex", "password":"1234", "type": "user"}]

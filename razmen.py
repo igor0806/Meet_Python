@@ -13,3 +13,12 @@ def GetMoney(m, nom_list):
                     print “Can not find solution”
                         return
                 return res
+
+from itertools import product
+from operator import mul
+
+n = int(input())
+
+f = lambda tpl: sum(map(mul, tpl, (1, 2, 5, 10)))
+count = sum(x == n for x in map(f, product(range(n + 1), range(n // 2 + 1), range(n // 5 + 1), range(n // 10 + 1))))
+print(count)
