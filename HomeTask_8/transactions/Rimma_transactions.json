@@ -1,1 +1,2 @@
-[{"Name": "Rimma", "type_user": "user", "transaction": "add_money", "balance before ": 100, "sum of trans": 100, "balance after": 200,}]
+[{"Name": "Rimma", "type_user": "user", "transaction": "add_money", "balance before ": 100, "sum of trans": 100, "balance after": 200}, 
+{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 1680, "sum of trans": 160, "balance after": 1520}]
