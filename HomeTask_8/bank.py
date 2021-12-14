@@ -35,7 +35,7 @@ def start():
                     if choice == '3':
                         start()
                     else:
-                        print(f"Вы ввели неправильно действие")
+                        print(f"Вы ввели неверное действие")
                         break
             elif usr_type == 'user':
                 print(menu_user)
@@ -47,7 +47,7 @@ def start():
                     if choice == '2':
                         f_money = input("Введите сумму пополнения: ")
                         if not f_money.isdigit():
-                            print("Ви ввели не правильно действие, попробуйте еще раз")
+                            print("Ви ввели неверное действие, попробуйте еще раз")
                             break
 
                         add_money(int(f_money))
@@ -55,7 +55,7 @@ def start():
                     if choice == '3':
                         g_money = input("Введите сумму для снятия: ")
                         if not g_money.isdigit():
-                            print("Ви ввели не правильно действие, попробуйте еще раз")
+                            print("Ви ввели неверное действие, попробуйте еще раз")
                             break
 
                         give_money(int(g_money))
@@ -63,7 +63,7 @@ def start():
                     if choice == '4':
                         start()
                     else:
-                        print(f"Ви ввели не правильно действие, попробуйте еще раз")
+                        print(f"Ви ввели неверное действие, попробуйте еще раз")
                         break
     def balance():
         with open(outpath / "balance" /f'{name}_balance.json', "r+") as file:
@@ -99,8 +99,6 @@ def start():
 
     def trans(name_trans,balance_before,sum_trans):
 
-
-
         data = {'Name': name,
                 'type_user': usr_type,
                 'transaction': name_trans,
@@ -120,7 +118,6 @@ def start():
                 if i != read_t[-1]:
                     file2.write(', \n')
             file2.write(']')
-
 
 
     def incasator_function(action):

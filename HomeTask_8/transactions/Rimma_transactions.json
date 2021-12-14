@@ -1,2 +1,6 @@
 [{"Name": "Rimma", "type_user": "user", "transaction": "add_money", "balance before ": 100, "sum of trans": 100, "balance after": 200}, 
-{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 1680, "sum of trans": 160, "balance after": 1520}]
+{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 1680, "sum of trans": 160, "balance after": 1520}, 
+{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 1520, "sum of trans": 160, "balance after": 1360}, 
+{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 1360, "sum of trans": 110, "balance after": 1250}, 
+{"Name": "Rimma", "type_user": "user", "transaction": "add_money", "balance before ": 1250, "sum of trans": 1000, "balance after": 2250}, 
+{"Name": "Rimma", "type_user": "user", "transaction": "give_money", "balance before ": 2250, "sum of trans": 160, "balance after": 2090}]

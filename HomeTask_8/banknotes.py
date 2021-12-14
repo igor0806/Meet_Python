@@ -18,7 +18,7 @@ def rec_change(M, coins_list):
         num_of_coins = float('inf')
 
         for coin in coins:
-            if money >= coin :
+            if money >= coin:
                 if change_dict[money - coin] + 1 < num_of_coins:
                     num_of_coins = change_dict[money - coin] + 1
                     s = coin
@@ -34,8 +34,6 @@ def method(M, coins):
 
 
     while M - path > 0:
-        if path == 0:
-            raise ValueError("У банка недостатньо коштів для видачі")
         M -= path
         nums, path = rec_change(M, coins)
         del_bankn.append(path)
@@ -47,15 +45,18 @@ def del_banknonte(nominal):
     print(nominal)
     with open(outpath / "bank_money.json", "r+") as file:
         data_collector = json.load(file)
-        for i in data_collector:
-            for x in i:
-                for y in nominal:
-                    if int(x) == y :
-                        i[x] -= 1
+        for i in nominal:
+            for x in data_collector:
+                for y in x:
+                    if i == int(y):
+                        x[y] -= 1
+                    if x[y] < 0:
+                        print('В банке недостаточно купюр для выдачи')
+                        return
 
 
-        file.seek(0,0)
-        json.dump(data_collector,file,indent=4)
+        file.seek(0, 0)
+        json.dump(data_collector, file, indent=4)
 
 
 outpath = Path.cwd()
@@ -72,7 +73,7 @@ def start_banknotes(cash):
             for x in i:
                 if i[x] > 0 and int(x) < cash:
                     what_we_have.append(i)
-                    # coins.append(int(x))
+
         print(what_we_have)
 
 
